@@ -45,14 +45,13 @@ public class ContactManagerTryCatch {
         }
 
         for (int i = 0; i < fullNames.size(); i++) {
-            String category = categories.get(i);
             String favorite = favorites.get(i) ? "Yes" : "Not";
 
             System.out.println("\n----- Contact #" + (i + 1) + " -----");
             System.out.println("Name: " + fullNames.get(i));
             System.out.println("Phone: " + phoneNumbers.get(i));
             System.out.println("Email: " + emails.get(i));
-            System.out.println("Category: " + category);
+            System.out.println("Category: " + categories.get(i));
             System.out.println("Favorite: " + favorite);
         }
         System.out.println("-----------------------------------");
